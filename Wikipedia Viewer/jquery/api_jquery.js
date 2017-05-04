@@ -22,10 +22,14 @@ $(document).ready(function() {
          $("#no").fadeIn(500);
       } else {
          // disable the button before getting the response from API
+         $("#hidden").css('display', 'block');
+         $("#progress-bar").animate({width:"65%"}, 2000);
          $(this).attr("disabled", true);
          // passing input text
          searchArticle($("#query").val());
          $("#no").hide(); 
+         $("#progress-bar").stop().animate({width:"100%"}, 1000, function() {
+         $("#hidden").fadeOut(1000); });
 
       }
       e.preventDefault();
