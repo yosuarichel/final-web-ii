@@ -1,5 +1,5 @@
 # final-web-ii
-Final Web II
-Just collection of my Collage projects
-Unstable script and have a lot of bugs
+Final Web II \n
+Just collection of my Collage projects \n
+Unstable script and have a lot of bugs \n
 Please modified to a stable script
