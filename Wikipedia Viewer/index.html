@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <title>
+      Wikipedia Search
+    </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/core.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="jquery/api_jquery.js"></script>
+  </head>
+  
+  <body class="container-fluid">
+    <div id="search" class="container">
+      
+      <!-- For Search Box -->
+      <img id="title" src="http://4.bp.blogspot.com/-LV4gYLR-Y50/Uk7Kj0T5vII/AAAAAAAAAIA/qVFNy16mYVw/s1600/wikipedia1.png"></div>
+      <section>
+        <form id="search-box" class="row">
+          <input type="text" id="query" class="form-control" placeholder="Search The Wikipedia..." autocomplete="on" autofocus>
+          </input>
+          <button id="submit" class="btn btn-primary" type="submit">
+            <span class="glyphicon glyphicon-search"></span>
+          </button>
+        </form>
+        <div id="hidden">
+          <div id="progress-bar"></div><div id="loading"></div>
+        </div>
+      </section>
+    <!-- End Of Search Box -->
+    
+    <!-- For Result Box -->
+      <section id="list-result" class="row">
+        <ul id="article-list"></ul><!-- col -->
+        <img id="no" class="img-circle" src="https://s-media-cache-ak0.pinimg.com/564x/b8/0e/bd/b80ebd5d245e09223acf30a1b01abd2d.jpg" style="height: 300px; width: 300px;" >
+      </section>
+    <!-- End Of Result Box -->
+    
+    </div>
+  </body>
+</html>
