@@ -1,3 +1,4 @@
+<!doctype html> 
 <html>
   <head>
     <title>
@@ -14,11 +15,10 @@
     <div id="search" class="container">
       
       <!-- For Search Box -->
-      <img id="title" src="http://4.bp.blogspot.com/-LV4gYLR-Y50/Uk7Kj0T5vII/AAAAAAAAAIA/qVFNy16mYVw/s1600/wikipedia1.png"></div>
-      <section>
-        <form id="search-box" class="row">
-          <input type="text" id="query" class="form-control" placeholder="Search The Wikipedia..." autocomplete="on" autofocus>
-          </input>
+      <img id="title" src="http://4.bp.blogspot.com/-LV4gYLR-Y50/Uk7Kj0T5vII/AAAAAAAAAIA/qVFNy16mYVw/s1600/wikipedia1.png">
+      <section id="search-box" class="row">
+        <form>
+          <input type="text" id="q" class="form-control" placeholder="Search The Wikipedia..." autocomplete="off" autofocus/>
           <button id="submit" class="btn btn-primary" type="submit">
             <span class="glyphicon glyphicon-search"></span>
           </button>
@@ -27,11 +27,11 @@
           <div id="progress-bar"></div><div id="loading"></div>
         </div>
       </section>
-    <!-- End Of Search Box -->
-    
+    <!-- End Of Search Box --> 
     <!-- For Result Box -->
       <section id="list-result" class="row">
-        <ul id="article-list"></ul><!-- col -->
+        <ul id="article-list">
+        </ul><!-- col -->
         <img id="no" class="img-circle" src="https://s-media-cache-ak0.pinimg.com/564x/b8/0e/bd/b80ebd5d245e09223acf30a1b01abd2d.jpg" style="height: 300px; width: 300px;" >
       </section>
     <!-- End Of Result Box -->
